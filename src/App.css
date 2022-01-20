@@ -1,38 +1,76 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.8s;
+}
+/* 
+----------------------------------------
+              gallery  
+----------------------------------------
+*/
+
+.title {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.title h2 {
+  width: 400px;
+  background-color: gainsboro;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+  border-radius: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.single_img {
+  text-align: center;
+  margin: 10px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.single_img img {
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+  padding: 10px;
+}
+.gallery_img {
+  width: 100%;
+  cursor: pointer;
+}
+.gallery_img img {
+  width: 100px;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* 
+----------------------------------------
+              accordion 
+----------------------------------------
+*/
+.question {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(7, 107, 134);
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgb(207, 207, 207);
+  cursor: pointer;
+  margin-top: 5px;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.toggle_icon {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer {
+  background-color: rgb(74, 200, 235);
+  padding: 10px;
+  transition: 1s;
 }
